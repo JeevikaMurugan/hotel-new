@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
- "build": "cd ../client && npm install && npm run build",
-  "start": "concurrently \"npm start --prefix ../client\" \"nodemon server.js --prefix server\" ",
+  "build": "cd ../client && npm install && npm run build",
+  "start": "concurrently  \"nodemon server.js --prefix server\" \"npm start --prefix ../client\" ",
   "server": "nodemon server.js",
   "client": "cd ../client && npm start"
   },
